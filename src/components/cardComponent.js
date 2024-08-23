@@ -50,12 +50,12 @@ const CardComponent = ({ img, name, inStorage, id, addToLiked, item, isLiked, pr
     };
     return (
         <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card" style={{ width: '18rem' }}> {/* Set fixed width */}
+            <div className="card" style={{ width: '18rem' }}>
                 <img
                     src={img}
                     className="card-img-top rounded"
                     alt={name}
-                    style={{ height: '200px', objectFit: 'cover', cursor: 'pointer' }} // Adjust the height if needed
+                    style={{ height: '200px', objectFit: 'cover', cursor: 'pointer' }}
                     onClick={handleImageClick}
                 />
                 <div className="card-body" style={{ backgroundColor: "#F8F8F8" }} >

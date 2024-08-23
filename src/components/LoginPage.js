@@ -22,7 +22,7 @@ const LoginPage = () => {
                 // Login user
                 userCredential = await signInWithEmailAndPassword(auth, email, password);
             } else {
-                // Signup user
+                // Signup userr
                 userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
                 const user = userCredential.user;

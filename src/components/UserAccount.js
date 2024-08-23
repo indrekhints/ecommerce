@@ -82,9 +82,9 @@ const UserAccount = () => {
                                     src={item.img}
                                     alt={item.name}
                                     style={{
-                                        width: '150px', // Adjust the width as needed
-                                        height: 'auto', // Maintains aspect ratio
-                                        marginRight: '10px' // Adds space between the image and text
+                                        width: '150px',
+                                        height: 'auto',
+                                        marginRight: '10px'
                                     }}
                                 />
                                 <div>

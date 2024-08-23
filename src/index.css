@@ -14,7 +14,7 @@
 .center-content {
     text-align: center;
     flex-grow: 1;
-    /* Allows the center content to grow and take up remaining space */
+
 }
 
 .right-content {
@@ -50,24 +50,24 @@
 .subSubmenuUl {
     display: inline-block;
     list-style: none;
-    /* Remove bullets */
+
     text-transform: uppercase;
-    /* Uppercase text */
+
     font-size: 8px;
-    /* Font size 8px */
+
     padding: 0;
-    /* Remove default padding */
+
     margin: 0;
-    /* Remove default margin */
+
     cursor: pointer;
 }
 
 .subSubmenuUl .nav-item {
     display: inline-block;
     margin-right: 10px;
-    /* Space between items */
 
-    /* Change cursor to pointer on hover */
+
+
 }
 
 .navbar-nav {
@@ -105,7 +105,7 @@
 
 .small-text {
     font-size: 0.875rem;
-    /* Adjust as needed for smaller text */
+
 }
 
 .btn-dark {
@@ -126,16 +126,16 @@
     color: darkgrey;
 }
 
-/* Additional styling for inputs to ensure smaller text and grey placeholder */
+
 .form-control.small-text::placeholder {
     color: grey;
     font-size: 0.875rem;
-    /* Adjust to match other text sizes */
+
 }
 
 .form-control.small-text {
     font-size: 0.875rem;
-    /* Ensure input text is smaller */
+
 }
 
 .form-container {

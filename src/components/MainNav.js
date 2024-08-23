@@ -80,12 +80,12 @@ const MainNav = () => {
 
 
     const handleLogout = () => {
-        // Logic for logging out the user
 
-        // Show the message
+
+
         setShowMessage(true);
 
-        // Hide the message after 2 seconds
+        // peaida message pärast 2 sec
         setTimeout(() => {
             setShowMessage(false);
         }, 2000);
@@ -149,14 +149,14 @@ const MainNav = () => {
                                                             style={{
                                                                 backgroundColor: 'black',
                                                                 color: 'white',
-                                                                borderRadius: '50%', // Adjusted for a more circular shape
+                                                                borderRadius: '50%',
                                                                 display: 'inline-block',
                                                                 textAlign: 'center',
                                                                 height: "20px",
                                                                 width: "20px",
-                                                                fontSize: "0.9em", // Adjusted for better readability
-                                                                padding: "0", // Ensures text is centered
-                                                                marginLeft: "10px" // Adds space between text and button
+                                                                fontSize: "0.9em",
+                                                                padding: "0",
+                                                                marginLeft: "10px"
                                                             }}
                                                         >
                                                             {currentUser.shoppingList.length}
@@ -174,14 +174,14 @@ const MainNav = () => {
                                                                 style={{
                                                                     backgroundColor: 'black',
                                                                     color: 'white',
-                                                                    borderRadius: '50%', // Adjusted for a more circular shape
+                                                                    borderRadius: '50%',
                                                                     display: 'inline-block',
                                                                     textAlign: 'center',
                                                                     height: "20px",
                                                                     width: "20px",
-                                                                    fontSize: "0.9em", // Adjusted for better readability
-                                                                    padding: "0", // Ensures text is centered
-                                                                    marginLeft: "10px" // Adds space between text and button
+                                                                    fontSize: "0.9em",
+                                                                    padding: "0",
+                                                                    marginLeft: "10px"
                                                                 }}
                                                             >
                                                                 {shoppingListLocal.length}

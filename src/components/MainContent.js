@@ -20,7 +20,7 @@ const MainContent = () => {
     console.log("test", currentUser)
 
     return (
-        /* users tuleb context deleteAllPersistentCacheIndexes, peaks ümber bimetama aga testimiseks käib küll */
+        /* users tuleb context deleteAllPersistentCacheIndexes, peaks ümber nimetama aga testimiseks käib küll */
         <>
             {
 
@@ -30,7 +30,7 @@ const MainContent = () => {
                             <div className="row">
                                 {obj.items.map((item, itemIndex) => (
                                     <div key={itemIndex} className="col-md-3">
-                                        {/* Ensure each item takes up 3 columns */}
+
                                         <CardComponent
                                             img={item.img}
                                             name={item.name}
