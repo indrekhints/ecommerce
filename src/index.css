@@ -1,13 +1,180 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.side-content {
+    text-align: center;
+}
+
+.center-content {
+    text-align: center;
+    flex-grow: 1;
+    /* Allows the center content to grow and take up remaining space */
+}
+
+.right-content {
+    text-align: right;
+}
+
+.submenu-items {
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.submenuUl {
+    display: inline-flex;
+    list-style: none;
+    /* Remove bullets */
+    text-transform: uppercase;
+    /* Uppercase text */
+    font-size: 12px;
+    /* Font size 6px */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    gap: 10px;
+    /* Space between items */
+    cursor: pointer;
+}
+
+.subSubmenuUl {
+    display: inline-block;
+    list-style: none;
+    /* Remove bullets */
+    text-transform: uppercase;
+    /* Uppercase text */
+    font-size: 8px;
+    /* Font size 8px */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    cursor: pointer;
+}
+
+.subSubmenuUl .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+    /* Space between items */
+
+    /* Change cursor to pointer on hover */
+}
+
+.navbar-nav {
+    font-size: 12px;
+}
+
+/* .navbar-nav .nav-item {
+    position: relative;
+}
+ */
+/* .submenu {
+    width: 100%;
+    margin-top: 10px;
+    
+} */
+
+/* .submenu .navbar-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    list-style: none;
+}
+ */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.button-group .btn+.btn {
+    margin-left: 10px;
+}
+
+.text-grey {
+    color: grey;
+}
+
+.small-text {
+    font-size: 0.875rem;
+    /* Adjust as needed for smaller text */
+}
+
+.btn-dark {
+    background-color: black;
+    border-color: black;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-link {
+    color: grey;
+}
+
+.btn-link:hover {
+    color: darkgrey;
+}
+
+/* Additional styling for inputs to ensure smaller text and grey placeholder */
+.form-control.small-text::placeholder {
+    color: grey;
+    font-size: 0.875rem;
+    /* Adjust to match other text sizes */
+}
+
+.form-control.small-text {
+    font-size: 0.875rem;
+    /* Ensure input text is smaller */
+}
+
+.form-container {
+    width: 400px;
+}
+
+.App {
+    text-align: center;
+    position: relative;
+}
+
+.logout-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeInOut 3s forwards;
+    z-index: 9999
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
